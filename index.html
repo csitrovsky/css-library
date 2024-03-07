@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Веб-сайт с технической поддержкой от Csitrovsky</title>
+	<link href="css/BssOun.core.20240101.css?v=1.0.0" rel="stylesheet">
+	
+	<!-- CSS внутри документа -->
+	<style media="screen">
+		.hidden, [hidden] {
+			display: none !important;
+		}
+		
+		a {
+			text-decoration: none;
+		}
+	</style>
+	
+	<!-- jQuery min -->
+	<script crossorigin="anonymous"
+	        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+	        referrerpolicy="no-referrer"
+	        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script crossorigin="anonymous"
+	        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+	        referrerpolicy="no-referrer"
+	        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+	
+	<!-- Дополнительные стили/скрипты -->
+</head>
+<body class="zoom zoom-none@sx" data-background="white" data-color="dark" data-preloader="true"
+      style="zoom: 1 !important;">
+
+<!-- TODO([...]): Create no project -->
+<div id="root">
+	<div class="app-layout scrolling" data-background="red">
+		<div class="flex-column padding-top-none padding-bottom-xl" data-background="light-grey" id="scrollable">
+			
+			<div class="app-header"></div>
+			
+			<div class="app-content">
+				<input checked="checked" class="hidden" id="menu-toggle" name="menu" type="checkbox">
+				<div id="overlay">
+					<label for="menu-toggle"></label>
+				</div>
+				<section class="app-center app-container margin-top-xl padding-x-none@sx"></section>
+			</div>
+			
+			<a class="flex items-center" data-background="dark" data-color="white" id="back-to-top">
+				<div class="app-container" style="flex: 1 0 auto;">
+					<div class="flex flex-row items-center gap-sm">
+						<i class="las la-angle-up"></i>
+						<span class="font-black flex-grow">Вернуться к началу...</span>
+					</div>
+				</div>
+			</a>
+			
+			<div class="app-footer" data-background="white" data-color="dark">
+				<div class="app-container">
+					<footer class="footer">
+						<div class="footer-wrapper">
+							<div class="breadcrumbs">
+								<nav aria-label="breadcrumb">
+									<ul class="breadcrumb-list">
+										<li class="breadcrumb-item">
+											<a class="breadcrumb-link" href="/">
+												<span>Главная страница</span>
+											</a>
+										</li>
+										
+										<li aria-current="page" class="breadcrumb-item active">
+											<span>CSS библиотека</span>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer-grid" data-template-columns=""></div>
+							<div class="copyright">
+								<div class="copyright-text">
+									<span>Copyright © 2024 Csitrovsky Inc. Все права защищены.</span>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+<script> /** code... */ </script>
+<script>
+	$('#back-to-top').click(function () {
+		document.getElementById('scrollable').scrollIntoView({
+			behavior: 'smooth'
+		});
+	});
+</script>
+
+</body>
+</html>
