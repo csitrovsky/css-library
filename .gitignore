@@ -1,4 +1,20 @@
+# Created by https://www.toptal.com/developers/gitignore/api/sass
+# Edit at https://www.toptal.com/developers/gitignore?templates=sass
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### Sass ###
+# General
 .sass-cache/
 *.css.map
 *.sass.map
 *.scss.map
+
+# Directory
+scss/
+
+# End of https://www.toptal.com/developers/gitignore/api/sass
